@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Daftar Member</title>
+</head>
+<body>
+    <h1>Daftar Member</h1>
+    <ul>
+        {% for member in mymembers %}
+            <li>{{ member.nama }} - {{ member.email }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
